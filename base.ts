@@ -57,15 +57,15 @@ function getOlderUser(first: User, second: User) : User | null {
 
 // 8 - any
 function getParams(query: string): any {
-    const parts = query.split('&');
-    const init: any = {};
-    const result = parts.reduce((acc, part) => {
-        const [key, value] = part.split('=');
-        acc[key] = value;
-        return acc;
-    }, init);
+  const parts = query.split('&');
+  const init: any = {};
+  const result = parts.reduce((acc, part) => {
+    const [key, value] = part.split('=');
+    acc[key] = value;
+    return acc;
+  }, init);
 
-    return result;
+  return result;
 }
 
 //9 - namespace

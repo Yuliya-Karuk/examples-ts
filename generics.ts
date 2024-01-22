@@ -1,5 +1,5 @@
 // first
-function last <T> (coll: Array<T>): T | null {
+function last1 <T> (coll: Array<T>): T | null {
     return coll.length > 0 ? coll[coll.length - 1] : null;
 }
 
