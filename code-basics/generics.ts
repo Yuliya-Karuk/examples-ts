@@ -56,10 +56,10 @@ console.log(newColl.items); // [10]
 type MyMap <T, U> = {
   values: Map<T, U>;
   set(key: T, value: U): void;
-  get(key: T) : U;
+  get(key: T) : U | undefined;
 }
 
-  const map: MyMap<string, number> = {
+const map: MyMap<string, number> = {
   values: new Map(),
   set(key, value) {
     this.values.set(key, value);
